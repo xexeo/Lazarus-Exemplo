@@ -20,7 +20,7 @@ object Frame1: TFrame1
   object Label1: TLabel
     Left = 24
     Height = 15
-    Top = 24
+    Top = 32
     Width = 85
     Caption = 'Click the button'
     ParentColor = False

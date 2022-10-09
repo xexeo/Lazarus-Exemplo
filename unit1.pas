@@ -5,7 +5,7 @@ unit Unit1;
 interface
 
 uses
-  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, ComCtrls, Unit2,
+  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, ComCtrls, Unit2, Unit3,
   StdCtrls, ExtCtrls;
 
 
@@ -22,12 +22,14 @@ type
     PageControl1: TPageControl;
     TabSheet1: TTabSheet;
     TabSheet2: TTabSheet;
+    TabSheet3: TTabSheet;
     procedure Button1Click(Sender: TObject);
     procedure FormCreate(Sender: TObject);
     procedure FormDestroy(Sender: TObject);
     procedure Image1Click(Sender: TObject);
   private
   frame1 : TFrame1;
+  frame2 : TFrame2;
   public
 
   end;
@@ -45,11 +47,14 @@ procedure TForm1.FormCreate(Sender: TObject);
 begin
   frame1 := TFrame1.Create(self);
   frame1.Parent := PageControl1.Pages[1];
+  frame2 := TFrame2.Create(self);
+  frame2.Parent := PageControl1.Pages[2];
 end;
 
 procedure TForm1.FormDestroy(Sender: TObject);
 begin
   frame1.Free;
+  frame2.Free;
 end;
 
 procedure TForm1.Image1Click(Sender: TObject);

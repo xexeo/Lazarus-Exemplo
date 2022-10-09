@@ -1,0 +1,134 @@
+object Frame2: TFrame2
+  Left = 0
+  Height = 600
+  Top = 0
+  Width = 800
+  ClientHeight = 600
+  ClientWidth = 800
+  TabOrder = 0
+  DesignLeft = 288
+  DesignTop = 145
+  object Shape1: TShape
+    Left = 528
+    Height = 100
+    Top = 128
+    Width = 100
+    Brush.Color = clMoneyGreen
+    Pen.Color = clYellow
+    Pen.Width = 10
+  end
+  object SpinEdit1: TSpinEdit
+    Left = 77
+    Height = 23
+    Top = 76
+    Width = 155
+    MaxValue = 255
+    TabOrder = 0
+  end
+  object SpinEdit2: TSpinEdit
+    Left = 77
+    Height = 23
+    Top = 104
+    Width = 155
+    MaxValue = 255
+    TabOrder = 1
+  end
+  object SpinEdit3: TSpinEdit
+    Left = 77
+    Height = 23
+    Top = 136
+    Width = 155
+    MaxValue = 255
+    TabOrder = 2
+  end
+  object Label1: TLabel
+    Left = 31
+    Height = 15
+    Top = 80
+    Width = 20
+    Caption = 'Red'
+    ParentColor = False
+  end
+  object Label2: TLabel
+    Left = 31
+    Height = 15
+    Top = 112
+    Width = 31
+    Caption = 'Green'
+    ParentColor = False
+  end
+  object Label3: TLabel
+    Left = 31
+    Height = 15
+    Top = 140
+    Width = 23
+    Caption = 'Blue'
+    ParentColor = False
+  end
+  object Button1: TButton
+    Left = 288
+    Height = 25
+    Top = 102
+    Width = 75
+    Caption = 'Brush it!'
+    OnClick = Button1Click
+    TabOrder = 3
+  end
+  object SpinEdit4: TSpinEdit
+    Left = 78
+    Height = 23
+    Top = 224
+    Width = 155
+    MaxValue = 255
+    TabOrder = 4
+  end
+  object SpinEdit5: TSpinEdit
+    Left = 78
+    Height = 23
+    Top = 252
+    Width = 155
+    MaxValue = 255
+    TabOrder = 5
+  end
+  object SpinEdit6: TSpinEdit
+    Left = 78
+    Height = 23
+    Top = 284
+    Width = 155
+    MaxValue = 255
+    TabOrder = 6
+  end
+  object Label4: TLabel
+    Left = 32
+    Height = 15
+    Top = 228
+    Width = 20
+    Caption = 'Red'
+    ParentColor = False
+  end
+  object Label5: TLabel
+    Left = 32
+    Height = 15
+    Top = 260
+    Width = 31
+    Caption = 'Green'
+    ParentColor = False
+  end
+  object Label6: TLabel
+    Left = 32
+    Height = 15
+    Top = 288
+    Width = 23
+    Caption = 'Blue'
+    ParentColor = False
+  end
+  object Button2: TButton
+    Left = 289
+    Height = 25
+    Top = 250
+    Width = 75
+    Caption = 'Pen it!'
+    OnClick = Button2Click
+    TabOrder = 7
+  end
+end
