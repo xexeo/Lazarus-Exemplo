@@ -131,4 +131,25 @@ object Frame2: TFrame2
     OnClick = Button2Click
     TabOrder = 7
   end
+  object TrackBar1: TTrackBar
+    Left = 480
+    Height = 25
+    Top = 352
+    Width = 200
+    Max = 200
+    OnChange = TrackBar1Change
+    Position = 100
+    TabOrder = 8
+  end
+  object TrackBar2: TTrackBar
+    Left = 440
+    Height = 200
+    Top = 104
+    Width = 25
+    Max = 200
+    OnChange = TrackBar2Change
+    Orientation = trVertical
+    Position = 100
+    TabOrder = 9
+  end
 end

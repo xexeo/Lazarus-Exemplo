@@ -6,7 +6,7 @@ interface
 
 uses
   Classes, SysUtils, Forms, Controls, ExtCtrls, Dialogs, Spin, StdCtrls,
-  Graphics;
+  Graphics, ComCtrls;
 
 type
 
@@ -28,8 +28,12 @@ type
     SpinEdit4: TSpinEdit;
     SpinEdit5: TSpinEdit;
     SpinEdit6: TSpinEdit;
+    TrackBar1: TTrackBar;
+    TrackBar2: TTrackBar;
     procedure Button1Click(Sender: TObject);
     procedure Button2Click(Sender: TObject);
+    procedure TrackBar1Change(Sender: TObject);
+    procedure TrackBar2Change(Sender: TObject);
   private
 
   public
@@ -50,6 +54,16 @@ end;
 procedure TFrame2.Button2Click(Sender: TObject);
 begin
   Shape1.Pen.Color := RGBToColor(SpinEdit4.Value,SpinEdit5.Value,SpinEdit6.Value)
+end;
+
+procedure TFrame2.TrackBar1Change(Sender: TObject);
+begin
+  Shape1.Width := TrackBar1.Position;
+end;
+
+procedure TFrame2.TrackBar2Change(Sender: TObject);
+begin
+  Shape1.Height := TrackBar2.Position;
 end;
 
 end.
