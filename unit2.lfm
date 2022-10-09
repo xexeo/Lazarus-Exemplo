@@ -1,13 +1,13 @@
 object Frame1: TFrame1
   Left = 0
-  Height = 600
+  Height = 588
   Top = 0
   Width = 800
-  ClientHeight = 600
+  ClientHeight = 588
   ClientWidth = 800
   TabOrder = 0
-  DesignLeft = 288
-  DesignTop = 145
+  DesignLeft = 928
+  DesignTop = 368
   object Button1: TButton
     Left = 136
     Height = 25
