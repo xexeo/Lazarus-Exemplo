@@ -9,9 +9,9 @@ object Frame2: TFrame2
   DesignLeft = 637
   DesignTop = 279
   object Shape1: TShape
-    Left = 528
+    Left = 480
     Height = 100
-    Top = 128
+    Top = 100
     Width = 100
     Brush.Color = clMoneyGreen
     Pen.Color = clYellow
@@ -132,10 +132,12 @@ object Frame2: TFrame2
     TabOrder = 7
   end
   object TrackBar1: TTrackBar
+    Cursor = crHandPoint
     Left = 480
     Height = 25
-    Top = 352
+    Top = 64
     Width = 200
+    Frequency = 10
     Max = 200
     OnChange = TrackBar1Change
     Position = 100
@@ -144,8 +146,9 @@ object Frame2: TFrame2
   object TrackBar2: TTrackBar
     Left = 440
     Height = 200
-    Top = 104
+    Top = 100
     Width = 25
+    Frequency = 10
     Max = 200
     OnChange = TrackBar2Change
     Orientation = trVertical
